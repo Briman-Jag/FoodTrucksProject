@@ -12,14 +12,14 @@ public class FoodTrucks {
 		foodTrucks = new FoodTruck[MAX_TRUCKS];
 	}
 	
-	public void addTruck(FoodTrucks f) {
+	public void addTruck(FoodTruck f) {
 		foodTrucks[numTrucks] = f;
 		numTrucks++;
 	}
 	
-	public FoodTrucks[] getFoodTrucks() {
-		FoodTrucks[] trucksCopy;
-		trucksCopy = new FoodTrucks[numTrucks];
+	public FoodTruck[] getFoodTrucks() {
+		FoodTruck[] trucksCopy;
+		trucksCopy = new FoodTruck[numTrucks];
 		for(int i = 0; i < numTrucks; i++) {
 			trucksCopy[i] = foodTrucks[i];
 		}
