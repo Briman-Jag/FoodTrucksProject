@@ -5,6 +5,7 @@ public class FoodTrucks {
 	
 	private FoodTruck[] foodTrucks;
 	private int numTrucks = 0;
+	private int hiRated = 0;
 	
 	private static final int MAX_TRUCKS = 5;
 	
@@ -17,6 +18,7 @@ public class FoodTrucks {
 		numTrucks++;
 	}
 	
+	
 	public FoodTruck[] getFoodTrucks() {
 		FoodTruck[] trucksCopy;
 		trucksCopy = new FoodTruck[numTrucks];
@@ -24,5 +26,10 @@ public class FoodTrucks {
 			trucksCopy[i] = foodTrucks[i];
 		}
 		return trucksCopy;
+	}
+	
+	public FoodTruck[] findHighestRated() {
+		
+		
 	}
 }
