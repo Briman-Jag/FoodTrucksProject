@@ -28,8 +28,4 @@ public class FoodTrucks {
 		return trucksCopy;
 	}
 	
-	public FoodTruck[] findHighestRated() {
-		
-		
-	}
 }

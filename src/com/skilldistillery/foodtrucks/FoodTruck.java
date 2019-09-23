@@ -15,7 +15,7 @@ public int getTruckId() {
 	return truckId;
 }
 
-public void setTruckId(int truckId) {
+public void setTruckId(int truckId) { 
 	this.truckId = truckId;
 	truckId = numTrucks + 1;
 	
@@ -51,6 +51,7 @@ public int getRating() {
 public void setRating(int rating) {
 	this.rating = rating;
 }
+
 
 @Override
 public String toString() {

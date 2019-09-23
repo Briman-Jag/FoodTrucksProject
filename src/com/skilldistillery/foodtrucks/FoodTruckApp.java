@@ -98,19 +98,24 @@ public class FoodTruckApp {
 			
 			break;
 		case 2:
-			// Call method to find average rating of all food trucks
+			// Find average rating of all food trucks
 			int average = 0;
 			average = ((truck1.getRating() + truck2.getRating() + truck3.getRating() 
 						+ truck4.getRating() + truck5.getRating())/5); 
 			System.out.println("Average Food Truck rating is " + average);
 			break;
 		case 3:
-			// Call method to display highest rated food truck
-			
+			// Display highest rated food truck
+			int hiFood = 0;
+			if (truck1.getRating() > truck2.getRating()) {
+				hiFood = truck1.getRating();
+			}
+			else if (truck2.getRating() > truck3.getRating() ) {
+				
+			}
 			break;
 		case 4:
 			// Quit
-			continue;
 		default:
 			System.out.println("Not an option.");
 		}
