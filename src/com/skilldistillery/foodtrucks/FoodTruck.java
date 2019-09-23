@@ -4,6 +4,7 @@ public class FoodTruck {
 	private int truckId;
 	private String name;
 	private String foodType;
+	private int numTrucks = 0;
 	private int rating;
 	
 public FoodTruck() {
@@ -16,7 +17,12 @@ public int getTruckId() {
 
 public void setTruckId(int truckId) {
 	this.truckId = truckId;
+	truckId = numTrucks +1;
 	
+}
+
+public int incrementTruckId() {
+	return truckId++;
 }
 
 public String getName() {
