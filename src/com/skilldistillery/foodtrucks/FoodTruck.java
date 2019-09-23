@@ -16,6 +16,7 @@ public int getTruckId() {
 
 public void setTruckId(int truckId) {
 	this.truckId = truckId;
+	
 }
 
 public String getName() {
@@ -23,6 +24,9 @@ public String getName() {
 }
 
 public void setName(String name) {
+	if (name == "") {
+		
+	}
 	this.name = name;
 }
 
