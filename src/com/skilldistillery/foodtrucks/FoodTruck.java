@@ -23,7 +23,7 @@ public int getTruckId() {
 }
 
 public void setTruckId(int truckId) { 
-	int numTrucks = 0;
+	int numTrucks;
 	this.truckId = truckId;
 	this.truckId += numTrucks;
 	++numTrucks;
