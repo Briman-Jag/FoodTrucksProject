@@ -22,7 +22,7 @@ public class FoodTruckApp {
 
 		String nameCheck;
 		int truckCheck = 1;
-		int menuInput;
+		boolean cont = true;
 
 		System.out.println("Welcome to the FoodTruck App where you can "
 				+ "enter up to 5 Food Trucks, rate them, and display " + "the highest rated on!");
@@ -78,7 +78,7 @@ public class FoodTruckApp {
 		truck4.setRating(kb.nextInt());
 
 		// User inputs Food Truck 5's information
-		System.out.println("Enter name of first Food Truck: ");
+		System.out.println("Enter name of fifth Food Truck: ");
 		truck5.setName(kb.next());
 		if (truck5.getName() == "") {
 
@@ -89,7 +89,8 @@ public class FoodTruckApp {
 		System.out.println("Enter your rating of the Food Truck from 1-10: ");
 		truck5.setRating(kb.nextInt());
 
-		do {
+		while (cont) {
+			int menuInput;
 			System.out.println("_____Main Menu_____");
 			System.out.println("Type the number for desired option:");
 			System.out.println("1. List Food Trucks");
@@ -106,8 +107,7 @@ public class FoodTruckApp {
 				truck3.toString();
 				truck4.toString();
 				truck5.toString();
-				
-				
+
 				break;
 			case 2:
 				// Find average rating of all food trucks
@@ -127,22 +127,24 @@ public class FoodTruckApp {
 				break;
 			case 4:
 				// Quit
+				cont = false;
 			default:
 				System.out.println("Not an option.");
 			}
 
-		} while (menuInput != 4);
+		}
 		kb.close();
+		System.exit(0);
 	}
 
 	public int calculateAvg(int rate) {
 
 		return rate;
 	}
-	
+
 	public int calcHighestRating(int rate) {
 		int hiRate = 0;
-		
+
 		return rate;
 	}
 	// Might not need because it requires using String
