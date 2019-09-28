@@ -118,15 +118,28 @@ public class FoodTruckApp {
 				break;
 			case 3:
 				// Display highest rated food truck
-				int[] rates = {truck1.getRating(), truck2.getRating(), truck3.getRating(), truck4.getRating(), truck5.getRating()};
-				int highest = rates[0];
-				int highestIndex = 0;
-				int i = 0;
-				if(rates[i] > highest ) {
-					highest = rates[i];
-					highestIndex = i;
+//				int[] rates = {truck1.getRating(), truck2.getRating(), truck3.getRating(), truck4.getRating(), truck5.getRating()};
+//				int highest = rates[0];
+				int highest = 0;
+				String highestName = "";
+				if (truck1.getRating() < truck2.getRating()) {
+					highest = truck2.getRating();
+					highestName = truck2.getName();
 				}
-				System.out.println("The Food Truck with the highest rating is " + highest);
+				if (truck2.getRating() < truck3.getRating()) {
+					highest = truck3.getRating();
+					highestName = truck3.getName();
+				}
+				if (truck3.getRating() < truck4.getRating()) {
+					highest = truck4.getRating();
+					highestName = truck4.getName();
+				}
+				if (truck4.getRating() < truck5.getRating()) {
+					highest = truck5.getRating();
+					highestName = truck5.getName();
+				}
+
+				System.out.println(highestName + " with the highest rating is " + highest);
 				break;
 			case 4:
 				// Quit
