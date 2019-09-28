@@ -1,6 +1,6 @@
 package com.skilldistillery.foodtrucks;
 
-public class FoodTrucks extends FoodTruck{
+public class FoodTrucks {
 	
 	
 	private FoodTruck[] foodTrucks;

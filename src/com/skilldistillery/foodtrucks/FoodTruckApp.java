@@ -5,9 +5,13 @@ import java.util.Scanner;
 public class FoodTruckApp {
 
 	public static void main(String[] args) {
-		FoodTruck truck1, truck2, truck3, truck4, truck5;
+		FoodTruck truck1 = new FoodTruck();
+		FoodTruck truck2 = new FoodTruck();
+		FoodTruck truck3 = new FoodTruck();
+		FoodTruck truck4 = new FoodTruck();
+		FoodTruck truck5 = new FoodTruck();
 		Scanner kb = new Scanner(System.in);
-		FoodTrucks[] foodTrucks = new FoodTrucks[5];
+		FoodTruck[] foodTrucks = new FoodTruck[5];
 		foodTrucks[0] = truck1;
 		foodTrucks[1] = truck2;
 		foodTrucks[2] = truck3;
