@@ -5,13 +5,16 @@ import java.util.Scanner;
 public class FoodTruckApp {
 
 	public static void main(String[] args) {
-
+		FoodTruck truck1, truck2, truck3, truck4, truck5;
 		Scanner kb = new Scanner(System.in);
-		FoodTruck truck1 = new FoodTruck();
-		FoodTruck truck2 = new FoodTruck();
-		FoodTruck truck3 = new FoodTruck();
-		FoodTruck truck4 = new FoodTruck();
-		FoodTruck truck5 = new FoodTruck();
+		FoodTrucks[] foodTrucks = new FoodTrucks[5];
+		foodTrucks[0] = truck1;
+		foodTrucks[1] = truck2;
+		foodTrucks[2] = truck3;
+		foodTrucks[3] = truck4;
+		foodTrucks[4] = truck5;
+		
+
 		
 		
 		String nameCheck;
@@ -95,7 +98,9 @@ public class FoodTruckApp {
 		switch (menuInput) {
 		case 1:
 			// Call string to list all food trucks
-			
+			for (String string : args) {
+				
+			}
 			break;
 		case 2:
 			// Find average rating of all food trucks

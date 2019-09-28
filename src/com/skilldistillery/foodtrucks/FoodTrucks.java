@@ -1,6 +1,6 @@
 package com.skilldistillery.foodtrucks;
 
-public class FoodTrucks {
+public class FoodTrucks extends FoodTruck{
 	
 	
 	private FoodTruck[] foodTrucks;
@@ -18,6 +18,9 @@ public class FoodTrucks {
 		numTrucks++;
 	}
 	
+	public void calculateAvg(int rate) {
+		
+	}
 	
 	public FoodTruck[] getFoodTrucks() {
 		FoodTruck[] trucksCopy;
