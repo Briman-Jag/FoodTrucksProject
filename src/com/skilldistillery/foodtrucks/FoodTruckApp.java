@@ -101,9 +101,13 @@ public class FoodTruckApp {
 			switch (menuInput) {
 			case 1:
 				// Call string to list all food trucks
-				for (String string : args) {
-
-				}
+				truck1.toString();
+				truck2.toString();
+				truck3.toString();
+				truck4.toString();
+				truck5.toString();
+				
+				
 				break;
 			case 2:
 				// Find average rating of all food trucks
@@ -142,7 +146,7 @@ public class FoodTruckApp {
 		return rate;
 	}
 	// Might not need because it requires using String
-//	public FoodTruck[] getFoodTrucks() {
+//		int numTrucks;
 //		FoodTruck[] trucksCopy;
 //		trucksCopy = new FoodTruck[numTrucks];
 //		for(int i = 0; i < numTrucks; i++) {
