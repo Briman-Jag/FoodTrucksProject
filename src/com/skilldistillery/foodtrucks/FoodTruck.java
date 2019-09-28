@@ -25,13 +25,11 @@ public int getTruckId() {
 public void setTruckId(int truckId) { 
 	int numTrucks = 0;
 	this.truckId = truckId;
-	truckId = numTrucks + 1;
+	this.truckId += numTrucks;
+	++numTrucks;
 	
 }
 
-public int incrementTruckId() {
-	return truckId++;
-}
 
 public String getName() {
 	return name;

@@ -21,7 +21,7 @@ public class FoodTruckApp {
 		foodTrucks[4] = truck5;
 
 		String nameCheck;
-		int truckCheck = 1;
+		int nextTruckId = 0;
 		boolean cont = true;
 
 		System.out.println("Welcome to the FoodTruck App where you can "
@@ -34,61 +34,60 @@ public class FoodTruckApp {
 		if (nameCheck.equalsIgnoreCase("quit")) {
 
 		} else {
-			truck1.setTruckId(truckCheck);
-
+			truck1.setTruckId(nextTruckId);
 			System.out.println("Enter the food type: ");
 			truck1.setFoodType(kb.next());
-			System.out.println("Enter your rating of the Food Truck from 1-10: ");
+			System.out.print("Enter your rating of the Food Truck from 1-10: ");
 			truck1.setRating(kb.nextInt());
 		}
 		// User inputs Food Truck 2's information
 		System.out.println("Enter name of second Food Truck: ");
 		truck2.setName(kb.next());
-		if (truck2.getName() == "") {
+		if (nameCheck.equalsIgnoreCase("quit")) {
 
+		} else {
+			truck2.setTruckId(nextTruckId);
+			System.out.println("Enter the food type: ");
+			truck2.setFoodType(kb.next());
+			System.out.println("Enter your rating of the Food Truck from 1-10: ");
+			truck2.setRating(kb.nextInt());
 		}
-		truck2.setTruckId(2);
-		System.out.println("Enter the food type: ");
-		truck2.setFoodType(kb.next());
-		System.out.println("Enter your rating of the Food Truck from 1-10: ");
-		truck2.setRating(kb.nextInt());
-
 		// User inputs Food Truck 3's information
 		System.out.println("Enter name of third Food Truck: ");
 		truck3.setName(kb.next());
-		if (truck3.getName() == "") {
+		if (nameCheck.equalsIgnoreCase("quit")) {
 
+		} else {
+			truck3.setTruckId(nextTruckId);
+			System.out.println("Enter the food type: ");
+			truck3.setFoodType(kb.next());
+			System.out.println("Enter your rating of the Food Truck from 1-10: ");
+			truck3.setRating(kb.nextInt());
 		}
-		truck3.setTruckId(3);
-		System.out.println("Enter the food type: ");
-		truck3.setFoodType(kb.next());
-		System.out.println("Enter your rating of the Food Truck from 1-10: ");
-		truck3.setRating(kb.nextInt());
-
 		// User inputs Food Truck 4th information
 		System.out.println("Enter name of fourth Food Truck: ");
 		truck4.setName(kb.next());
-		if (truck4.getName() == "") {
+		if (nameCheck.equalsIgnoreCase("quit")) {
 
+		} else {
+			truck4.setTruckId(nextTruckId);
+			System.out.println("Enter the food type: ");
+			truck4.setFoodType(kb.next());
+			System.out.println("Enter your rating of the Food Truck from 1-10: ");
+			truck4.setRating(kb.nextInt());
 		}
-		truck4.setTruckId(4);
-		System.out.println("Enter the food type: ");
-		truck4.setFoodType(kb.next());
-		System.out.println("Enter your rating of the Food Truck from 1-10: ");
-		truck4.setRating(kb.nextInt());
-
 		// User inputs Food Truck 5's information
 		System.out.println("Enter name of fifth Food Truck: ");
 		truck5.setName(kb.next());
-		if (truck5.getName() == "") {
+		if (nameCheck.equalsIgnoreCase("quit")) {
 
+		} else {
+			truck5.setTruckId(nextTruckId);
+			System.out.println("Enter the food type: ");
+			truck5.setFoodType(kb.next());
+			System.out.println("Enter your rating of the Food Truck from 1-10: ");
+			truck5.setRating(kb.nextInt());
 		}
-		truck5.setTruckId(5);
-		System.out.println("Enter the food type: ");
-		truck5.setFoodType(kb.next());
-		System.out.println("Enter your rating of the Food Truck from 1-10: ");
-		truck5.setRating(kb.nextInt());
-
 		while (cont) {
 			int menuInput;
 			System.out.println("_____Main Menu_____");
@@ -118,8 +117,6 @@ public class FoodTruckApp {
 				break;
 			case 3:
 				// Display highest rated food truck
-//				int[] rates = {truck1.getRating(), truck2.getRating(), truck3.getRating(), truck4.getRating(), truck5.getRating()};
-//				int highest = rates[0];
 				int highest = 0;
 				String highestName = "";
 				if (truck1.getRating() < truck2.getRating()) {
@@ -143,6 +140,7 @@ public class FoodTruckApp {
 				break;
 			case 4:
 				// Quit
+				System.out.println("Thanks for rating Food Trucks! Bye!");
 				cont = false;
 				break;
 			default:
