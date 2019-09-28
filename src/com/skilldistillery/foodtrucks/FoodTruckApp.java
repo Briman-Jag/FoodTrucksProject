@@ -4,23 +4,22 @@ import java.util.Scanner;
 
 public class FoodTruckApp {
 
+	private static final int MAX = 5;
+
 	public static void main(String[] args) {
+		FoodTruck[] foodTrucks = new FoodTruck[MAX];
 		FoodTruck truck1 = new FoodTruck();
 		FoodTruck truck2 = new FoodTruck();
 		FoodTruck truck3 = new FoodTruck();
 		FoodTruck truck4 = new FoodTruck();
 		FoodTruck truck5 = new FoodTruck();
 		Scanner kb = new Scanner(System.in);
-		FoodTruck[] foodTrucks = new FoodTruck[5];
 		foodTrucks[0] = truck1;
 		foodTrucks[1] = truck2;
 		foodTrucks[2] = truck3;
 		foodTrucks[3] = truck4;
 		foodTrucks[4] = truck5;
-		
 
-		
-		
 		String nameCheck;
 		int truckCheck = 1;
 		int menuInput;
@@ -89,48 +88,67 @@ public class FoodTruckApp {
 		truck5.setFoodType(kb.next());
 		System.out.println("Enter your rating of the Food Truck from 1-10: ");
 		truck5.setRating(kb.nextInt());
-		
+
 		do {
-		System.out.println("_____Main Menu_____");
-		System.out.println("Type the number for desired option:");
-		System.out.println("1. List Food Trucks");
-		System.out.println("2. Food Trucks Average Rating");
-		System.out.println("3. Highest rated");
-		System.out.println("4. Quit");
-		menuInput = kb.nextInt();
-		
-		switch (menuInput) {
-		case 1:
-			// Call string to list all food trucks
-			for (String string : args) {
-				
+			System.out.println("_____Main Menu_____");
+			System.out.println("Type the number for desired option:");
+			System.out.println("1. List Food Trucks");
+			System.out.println("2. Food Trucks Average Rating");
+			System.out.println("3. Highest rated");
+			System.out.println("4. Quit");
+			menuInput = kb.nextInt();
+
+			switch (menuInput) {
+			case 1:
+				// Call string to list all food trucks
+				for (String string : args) {
+
+				}
+				break;
+			case 2:
+				// Find average rating of all food trucks
+				int average = 0;
+				average = ((truck1.getRating() + truck2.getRating() + truck3.getRating() + truck4.getRating()
+						+ truck5.getRating()) / 5);
+				System.out.println("Average Food Truck rating is " + average);
+				break;
+			case 3:
+				// Display highest rated food truck
+				int hiFood = 0;
+				if (truck1.getRating() > truck2.getRating()) {
+					hiFood = truck1.getRating();
+				} else if (truck2.getRating() > truck3.getRating()) {
+
+				}
+				break;
+			case 4:
+				// Quit
+			default:
+				System.out.println("Not an option.");
 			}
-			break;
-		case 2:
-			// Find average rating of all food trucks
-			int average = 0;
-			average = ((truck1.getRating() + truck2.getRating() + truck3.getRating() 
-						+ truck4.getRating() + truck5.getRating())/5); 
-			System.out.println("Average Food Truck rating is " + average);
-			break;
-		case 3:
-			// Display highest rated food truck
-			int hiFood = 0;
-			if (truck1.getRating() > truck2.getRating()) {
-				hiFood = truck1.getRating();
-			}
-			else if (truck2.getRating() > truck3.getRating() ) {
-				
-			}
-			break;
-		case 4:
-			// Quit
-		default:
-			System.out.println("Not an option.");
-		}
-		
+
 		} while (menuInput != 4);
 		kb.close();
 	}
+
+	public int calculateAvg(int rate) {
+
+		return rate;
+	}
+	
+	public int calcHighestRating(int rate) {
+		int hiRate = 0;
+		
+		return rate;
+	}
+	// Might not need because it requires using String
+//	public FoodTruck[] getFoodTrucks() {
+//		FoodTruck[] trucksCopy;
+//		trucksCopy = new FoodTruck[numTrucks];
+//		for(int i = 0; i < numTrucks; i++) {
+//			trucksCopy[i] = foodTrucks[i];
+//		}
+//		return trucksCopy;
+//	}
 
 }
