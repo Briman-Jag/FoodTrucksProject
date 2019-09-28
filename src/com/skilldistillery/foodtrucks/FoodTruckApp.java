@@ -102,11 +102,11 @@ public class FoodTruckApp {
 			switch (menuInput) {
 			case 1:
 				// Call string to list all food trucks
-				truck1.toString();
-				truck2.toString();
-				truck3.toString();
-				truck4.toString();
-				truck5.toString();
+				System.out.println(truck1.toString());
+				System.out.println(truck2.toString());
+				System.out.println(truck3.toString());
+				System.out.println(truck4.toString());
+				System.out.println(truck5.toString());
 
 				break;
 			case 2:
@@ -128,6 +128,7 @@ public class FoodTruckApp {
 			case 4:
 				// Quit
 				cont = false;
+				break;
 			default:
 				System.out.println("Not an option.");
 			}
