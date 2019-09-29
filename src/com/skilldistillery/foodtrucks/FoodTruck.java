@@ -23,10 +23,10 @@ public int getTruckId() {
 }
 
 public void setTruckId(int truckId) { 
-	int numTrucks;
+	int numTrucks = 0;
 	this.truckId = truckId;
-	this.truckId += numTrucks;
-	++numTrucks;
+	this.truckId += numTrucks + 10;
+
 	
 }
 
