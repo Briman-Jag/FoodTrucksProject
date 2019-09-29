@@ -200,8 +200,8 @@ public class FoodTruckApp {
 					}
 				}
 
-				System.out.println("Food Truck ID:" + highestTruckId + " " + highestName
-						+ " has highest rating of " + highest);
+				System.out.println(
+						"Food Truck ID:" + highestTruckId + " " + highestName + " has highest rating of " + highest);
 				System.out.println("Food Type: " + highestType);
 				break;
 			case 4:
@@ -216,17 +216,6 @@ public class FoodTruckApp {
 		}
 		kb.close();
 		System.exit(0);
-	}
-
-	public int calculateAvg(int rate) {
-
-		return rate;
-	}
-
-	public int calcHighestRating(int rate) {
-		int hiRate = 0;
-
-		return rate;
 	}
 
 }
