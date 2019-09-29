@@ -166,7 +166,7 @@ public class FoodTruckApp {
 				String highestType = "";
 				int highestTruckId = 0;
 
-				if (truck2.getRating() != 0) {
+				if (truck1.getRating() != 0 && truck2.getRating() != 0) {
 					if (truck1.getRating() < truck2.getRating()) {
 						highest = truck2.getRating();
 						highestName = truck2.getName();
@@ -175,7 +175,7 @@ public class FoodTruckApp {
 					}
 
 				}
-				if (truck3.getRating() != 0) {
+				if (truck2.getRating() != 0 && truck3.getRating() != 0) {
 					if (truck2.getRating() < truck3.getRating()) {
 						highest = truck3.getRating();
 						highestName = truck3.getName();
@@ -183,7 +183,7 @@ public class FoodTruckApp {
 						highestTruckId = truck3.getTruckId();
 					}
 				}
-				if (truck3.getRating() != 0) {
+				if (truck3.getRating() != 0 && truck4.getRating() != 0) {
 					if (truck3.getRating() < truck4.getRating()) {
 						highest = truck4.getRating();
 						highestName = truck4.getName();
@@ -191,7 +191,7 @@ public class FoodTruckApp {
 						highestTruckId = truck4.getTruckId();
 					}
 				}
-				if (truck4.getRating() != 0) {
+				if (truck4.getRating() != 0 && truck5.getRating() != 0) {
 					if (truck4.getRating() < truck5.getRating()) {
 						highest = truck5.getRating();
 						highestName = truck5.getName();
