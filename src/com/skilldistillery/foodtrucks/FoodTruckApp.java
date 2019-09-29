@@ -32,8 +32,8 @@ public class FoodTruckApp {
 		truck1.setName(kb.next());
 		nameCheck = truck1.getName();
 		if (nameCheck.equalsIgnoreCase("quit")) {
-			
-		} else {
+			System.out.println("Onto next truck"); 
+		} else if (!nameCheck.contentEquals("")){
 			truck1.setTruckId(nextTruckId);
 			System.out.println("Enter the food type: ");
 			truck1.setFoodType(kb.next());
