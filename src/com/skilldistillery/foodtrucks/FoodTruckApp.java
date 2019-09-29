@@ -199,8 +199,8 @@ public class FoodTruckApp {
 					}
 				}
 
-				System.out.println("Food Truck: " + highestTruckId + "- " + highestName + " with the highest rating is "
-						+ highest);
+				System.out.println("Food Truck ID:" + highestTruckId + "Name: " + highestName
+						+ " has highest rating of " + highest);
 				System.out.println("Food Type: " + highestType);
 				break;
 			case 4:
