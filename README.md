@@ -19,7 +19,7 @@ The grading requirements for this project are:
 ### How to run
 The prompts the user to enter details of up to 5 food trucks and give them a rating. If the user wishes to rate less than 5 food trucks they can type "quit" to skip onto the next food truck rating. Once all the details are input the user is lead to a menu where they have 4 options. The first lists the Food trucks, the second prints the calculated average rating of all the food trucks entered, the third prints the highest rated food truck with its details, and the fourth option allows the user to quit.
 
-### Technologies/Topics Applies
+### Technologies/Topics Applied
 Technologies and topics used in this project were: Arrays, getters & setters, method calling, while loops, switch, toString, booleans, menu interface, and nest if statements.
 
 ### Lessons Learned
